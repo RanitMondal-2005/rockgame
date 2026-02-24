@@ -121,7 +121,13 @@ STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
 
+# Where to send unauthenticated users, 
+# suppose if a user directly try to go to ../game/.. page without login ,so they will we sent to this url via login url
 
+# we will use default login and logout logic of django
+# but the HTML page is yours i.e the templates/registration/login.html ,,django already knows it, and we also made it in templates folder,so no need to explicitly mention anything, Django will find it and use
 LOGIN_URL = "/accounts/login/"
+# successful login will also return to home page
 LOGIN_REDIRECT_URL = "/"
+# Log out will return BACK to Home page
 LOGOUT_REDIRECT_URL = '/'

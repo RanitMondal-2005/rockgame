@@ -1,11 +1,24 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
 
 {% block content %}
+<div class="menu-container">
 
-<h1>Main Menu</h1>
+    <h1 class="main-title">🎮 Enter The Arena</h1>
+    <p class="subtitle">Pick your mode and start the battle!</p>
 
-<a href="#">Play Online (Coming Soon)</a>
-<br><br>
-<a href="{% url 'computer_menu' %}">Play With Computer</a>
+    <div class="menu-buttons">
+        <div class="menu-card coming-soon">
+            <h2>🌍 Play Online</h2>
+            <p>Challenge real players worldwide</p>
+            <span class="soon-tag">Coming Soon</span>
+        </div>
 
+        <a href="/game/" class="menu-card play-card">
+            <h2>🖥 Play With Computer</h2>
+            <p>Battle against the system AI</p>
+        </a>
+    </div>
+
+</div>
 {% endblock %}

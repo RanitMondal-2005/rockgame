@@ -1,25 +1,45 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" href="/static/style.css">
+    <meta charset="UTF-8">
+    <title>{% block title %}Rock Paper Scissor{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
 
-<nav>
-    <h2>RPS Game</h2>
-    {% if user.is_authenticated %}
-        <p>Welcome {{ user.username }}</p>
-        
-        <form action="{% url 'logout' %}" method="post" style="display:inline;">
-            {% csrf_token %}
-            <button type="submit">Logout</button>
-        </form>
-    {% endif %}
-</nav>
+<header class="header">
+    <div class="logo">Rock Paper Scissor</div>
 
-{% block content %}
-{% endblock %}
+    <nav class="nav" >
+        <a href="/">Home</a>
+        
+
+        {% if user.is_authenticated %}
+                <span class="welcome-text">Hi,{{ user.username }}</span>
+                
+                <!-- Log out needs POST ,so dont add <a> here,as it will give GET by default -->
+                <form class="logout-form " action="/accounts/logout/" method="post" style="display:inline;">
+                    {% csrf_token %}
+                    <button type="submit" class="logout-btn">Logout</button>
+                </form>
+            {% else %}
+                <a href="/accounts/login/">Login</a>
+                <a href="/accounts/signup/">Signup</a>
+        {% endif %}
+    </nav>
+</header>
+
+<main class="main-content">
+    {% block content %}
+    {% endblock %}
+</main>
+
+<footer class="footer">
+    <p>© 2026 Rock Paper Scissor </p>
+    <p> Built Using HTML,CSS,JS & Django </p>
+    <p>All Rights Reserved by Ranit Mondal</p>
+</footer>
 
 </body>
 </html>

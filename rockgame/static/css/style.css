@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f3f4f6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(90deg, #1e3a8a, #2563eb);
+    color: white;
+    padding: 18px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #facc15;
+}
+.welcome-text {
+    margin-left: 25px;
+    font-weight: 500;
+    color: #facc15;
+}
+/* Log Out : blend inside Nav Bar since it is Technically a Form */
+.logout-form {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    flex: 1;
+    width: 85%;
+    margin: 50px auto;
+}
+
+/* FOOTER */
+.footer {
+    background: #0f172a;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 25px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+/* HOME PAGE */
+.home-box {
+    text-align: center;
+    padding: 70px 0;
+}
+
+.home-box h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.home-box p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* GAME PAGE */
+.game-container {
+    text-align: center;
+}
+
+.choices {
+    margin-top: 30px;
+}
+
+.choice-btn {
+    padding: 15px 30px;
+    margin: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.choice-btn:hover {
+    background: #1e40af;
+    transform: scale(1.05);
+}
+
+/* COMPUTER MENU PAGE */
+/* COMPUTER MENU SECTION */
+
+.computer-section {
+    text-align: center;
+}
+
+.computer-header {
+    margin-bottom: 50px;
+}
+
+.computer-header h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #1e3a8a;
+}
+
+.computer-header p {
+    color: #555;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+/* Primary Play Button */
+.primary-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.primary-btn:hover {
+    background: #1e40af;
+    transform: translateY(-3px);
+}
+
+/* Power Level Styling */
+.power-level {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+/* FORMS (Login & Signup) */
+form {
+    background: white;
+    padding: 30px;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 18px 0;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 10px 18px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1e40af;
+}
+
+
+/* MAIN MENU STYLING */
+
+.menu-container {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.main-title {
+    font-size: 48px;
+    margin-bottom: 50px;
+    color: #1e3a8a;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.menu-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.menu-card {
+    width: 280px;
+    padding: 30px;
+    border-radius: 12px;
+    text-decoration: none;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    position: relative;
+}
+
+.menu-card h2 {
+    margin-bottom: 15px;
+}
+
+.menu-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Play Card */
+.play-card {
+    border: 2px solid #2563eb;
+}
+
+.play-card:hover {
+    background: #2563eb;
+    color: white;
+    transform: translateY(-8px);
+}
+
+.play-card:hover p {
+    color: white;
+}
+
+/* Coming Soon Card */
+.coming-soon {
+    opacity: 0.7;
+    cursor: not-allowed;
+    border: 2px dashed #999;
+}
+
+.soon-tag {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 6px 12px;
+    background: #facc15;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}

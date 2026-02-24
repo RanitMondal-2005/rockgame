@@ -1,11 +1,19 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
+{% block title %}Computer Menu{% endblock %}
 
 {% block content %}
 
-<h1>Play With Computer</h1>
+<div class="computer-section">
 
-<a href="{% url 'game_page' mode='10' %}">Play for 10 Points</a>
-<br><br>
-<a href="{% url 'game_page' mode='unlimited' %}">Play Unlimited</a>
+    <div class="computer-header">
+        <h1>🖥 Play Against Computer</h1>
+        <p>Click below to start the game.</p>
+
+        <a href="{% url 'game_page' %}" class="primary-btn">
+            Start Game
+        </a>
+    </div>
+
+</div>
 
 {% endblock %}
