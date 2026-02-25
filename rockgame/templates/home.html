@@ -2,29 +2,30 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-<div class="menu-container">
+<div class=" main-menu-bg ">
+        <div class="menu-container">
 
-    <h1 class="main-title">🎮 Enter The Arena</h1>
-    <p class="subtitle">Pick your mode and start the battle!</p>
+            <h1 class="main-title">🎮 Enter The Arena</h1>
+            <p class="subtitle">Pick your mode and start the battle!</p>
 
-    <div class="menu-buttons">
-        <div class="menu-card coming-soon">
-            <h2>🌍 Play Online</h2>
-            <p>Challenge real players worldwide</p>
-            <span class="soon-tag">Coming Soon</span>
+            <div class="menu-buttons">
+                <div class="menu-card coming-soon">
+                    <h2>🌍 Play Online</h2>
+                    <p>Challenge real players worldwide</p>
+                    <span class="soon-tag">Coming Soon</span>
+                </div>
+
+               <div class="menu-card coming-soon">
+                    <h2>👥 Friends Arena</h2>
+                    <p>Invite. Compete. Brag later.</p>
+                    <span class="soon-tag">Coming Soon</span>
+                </div>
+
+                <a href="/game/" class="menu-card play-card">
+                    <h2>🖥 Play With Computer</h2>
+                    <p>Battle against the system AI</p>
+                </a>
+            </div>
         </div>
-
-       <div class="menu-card coming-soon">
-            <h2>👥 Friends Arena</h2>
-            <p>Invite. Compete. Brag later.</p>
-            <span class="soon-tag">Coming Soon</span>
-        </div>
-
-        <a href="/game/" class="menu-card play-card">
-            <h2>🖥 Play With Computer</h2>
-            <p>Battle against the system AI</p>
-        </a>
-    </div>
-
 </div>
 {% endblock %}
