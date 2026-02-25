@@ -26,7 +26,7 @@ const drawGame=()=>{
     console.log("Match Draw");
     result_msg.classList.remove("win", "lose");
     result_msg.classList.add("draw");
-    result_msg.innerText = "It's a draw. Try again.";
+    result_msg.innerText = "It's a draw 🤝.Try again.";
 }
 
 const showWinner=(userWin)=>{
@@ -36,14 +36,14 @@ const showWinner=(userWin)=>{
         userScore++;
         user_ID.innerText=userScore;
         result_msg.classList.add("win");
-        result_msg.innerText = "Nice move! You take this round.";
+        result_msg.innerText = "Well Played! Victory is yours!🏆";
     }
     else{
         console.log("Computer Wins");
         compScore++;
         comp_ID.innerText=compScore;
         result_msg.classList.add("lose");
-        result_msg.innerText = "Good try. Computer wins this round.";
+        result_msg.innerText = "Oops!!Computer wins.⚠️";
     }
 }
 
