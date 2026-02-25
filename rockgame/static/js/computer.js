@@ -3,6 +3,9 @@
 let compScore=0;
 let userScore=0;
 
+const user_ID=document.querySelector("#player-score");
+const comp_ID=document.querySelector("#computer-score");
+
 const choices=document.querySelectorAll(".img-class");
 const result_msg=document.querySelector("#result");
 const genComputerChoice=()=>{
@@ -30,11 +33,15 @@ const showWinner=(userWin)=>{
     result_msg.classList.remove("win", "lose", "draw");
     if(userWin===true){
         console.log("User Wins");
+        userScore++;
+        user_ID.innerText=userScore;
         result_msg.classList.add("win");
         result_msg.innerText = "Nice move! You take this round.";
     }
     else{
         console.log("Computer Wins");
+        compScore++;
+        comp_ID.innerText=compScore;
         result_msg.classList.add("lose");
         result_msg.innerText = "Good try. Computer wins this round.";
     }
