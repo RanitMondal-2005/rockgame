@@ -169,7 +169,7 @@ body {
 }
 
 .img-class:hover img {
-    transform: scale(1.12);
+    transform: scale(1.05);
 }
 
 /* 3 Images  in a Column */
@@ -192,6 +192,35 @@ body {
     text-align: center;    
 }
 
+/* JS Design For Game Page */
+#result {
+    margin-top: 30px;
+    padding: 12px 28px;
+    border-radius: 14px;   
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+/* Win */
+.win {
+    background-color: #2e7d32;  
+    color: #ffffff;
+}
+
+/* Lose */
+.lose {
+    background-color: #c62828;   
+    color: #ffffff;
+}
+
+/* Draw */
+.draw {
+    background-color: #616161; 
+    color: #ffffff;
+}
 
 /* COMPUTER MENU PAGE */
 /* COMPUTER MENU SECTION */
@@ -352,3 +381,4 @@ button:hover {
     font-size: 12px;
     font-weight: bold;
 }
+
