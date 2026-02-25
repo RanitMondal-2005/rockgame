@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-_)!pi=!z*94=rvb1k8gg5_3ygp^9g2=55ff36#%wa!t-^t$q&r'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["rockgame.onrender.com"]
 
