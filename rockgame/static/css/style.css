@@ -14,7 +14,7 @@ body {
 
 /* HEADER */
 .header {
-    background: linear-gradient(90deg, #1e3a8a, #2563eb);
+    background: linear-gradient(90deg, #10318a, #2563eb);
     color: white;
     padding: 18px 60px;
     display: flex;
@@ -45,7 +45,8 @@ body {
 }
 /* Log Out : blend inside Nav Bar since it is Technically a Form */
 .logout-form {
-    display: inline;
+    /* Forms are normally block elements, so display: inline to make it blend with Nav Bar */
+    display: inline; 
     margin: 0;
     padding: 0;
     border: none;
@@ -53,6 +54,8 @@ body {
 
 /* MAIN CONTENT */
 .main-content {
+    /* Header and Footer fixed height , so Rest part must be Body's 
+     so, flex: 1 → takes remaining space and this also Keeps Footer at Bottom Always */
     flex: 1;
     width: 85%;
     margin: 50px auto;
@@ -166,7 +169,10 @@ form {
     box-shadow: 0 6px 15px rgba(0,0,0,0.08);
 }
 
-input {
+input{
+    /* Blue glow beside the input fields is Browser default CSS ,
+    Only one i/p field glows at a time when clicked in, because Only one element can be focused , others remain Normal 
+    You Can customize the Glow effect using input:focus {...} */
     width: 100%;
     padding: 10px;
     margin: 10px 0 18px 0;
@@ -214,7 +220,7 @@ button:hover {
     gap: 40px;
     flex-wrap: wrap;
 }
-
+/* Creating Floating card look. */
 .menu-card {
     width: 280px;
     padding: 30px;
